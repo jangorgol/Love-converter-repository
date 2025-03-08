@@ -10,6 +10,11 @@ const convertButton = document.getElementById("convert-btn")
 convertButton.addEventListener("click", convert)
 
 function convert(){
+    if (inputValue.value === "") {
+        loveAnswer.innerHTML = "Please enter a value"
+        kissAnswer.innerHTML = "Please enter a value"
+        hugAnswer.innerHTML = "Please enter a value"
+        return
     if (inputValue.value < 0) {
         loveAnswer.innerHTML = "You can't have negative love, silly!"
         kissAnswer.innerHTML = "You can't have negative kisses, silly!"
@@ -33,5 +38,6 @@ function convert(){
     loveAnswer.innerHTML = `${value} Chanti "love you" is equal to ${loveInJayRounded} Jay's "I love you's"`
     kissAnswer.innerHTML = `${value} Chanti kiss is equal to ${kissInJayRounded} Jay's kisses`
     hugAnswer.innerHTML = `${value} Chanti hug is equal to ${hugInJayRounded} Jay's hugs`
+    }
     }
 }
