@@ -10,6 +10,12 @@ const convertButton = document.getElementById("convert-btn")
 convertButton.addEventListener("click", convert)
 
 function convert(){
+    if (inputValue.value = "negative") {
+        loveAnswer.innerHTML = "You can't have negative love, silly!"
+        kissAnswer.innerHTML = "You can't have negative kisses, silly!"
+        hugAnswer.innerHTML = "You can't have negative hugs, silly!"
+        return
+    }
     let value = parseFloat(inputValue.value)
     let loveInJay = value * convertLove
     let kissInJay = value * convertKiss
