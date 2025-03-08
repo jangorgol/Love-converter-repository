@@ -5,7 +5,7 @@ const convertLove = 5000.281
 const convertKiss = 4500.264
 const convertHug = 3500.204
 const inputValue = document.getElementById("input-value")
-const convertButton = document.getElementById("convert-button")
+const convertButton = document.getElementById("convert-btn")
 
 convertButton.addEventListener("click", convert)
 
