@@ -10,7 +10,7 @@ const convertButton = document.getElementById("convert-btn")
 convertButton.addEventListener("click", convert)
 
 function convert(){
-    if (inputValue.value = "negative") {
+    if (inputValue.value < 0) {
         loveAnswer.innerHTML = "You can't have negative love, silly!"
         kissAnswer.innerHTML = "You can't have negative kisses, silly!"
         hugAnswer.innerHTML = "You can't have negative hugs, silly!"
